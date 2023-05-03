@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BlogProject.Models.Blog>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    @using(Html.BeginForm())
+            {
+    <div class="form-group">
+        <div style="width:25%;float:right">
+            @Html.TextBox("search", null, new {@class="form-control",@placeholder="Arayacağınız Kelimeyi Giriniz" })
+        </div>
+        <div>
+         
+            <button style="float: right; " name="btn" value="search" class="button">Ara</button>
+        </div>
+        
+    </div>
+               
+
+            }
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            @foreach (var item in Model)
+            {
+                <div class="post-preview">
+                    <a asp-action="Post" asp-route-id="@item.Id">
+                        <h2 class="post-title">
+                            @item.Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            @item.Subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">
+                        Posted by
+                        @item.Author.Name
+                        @item.CreateTime 'da yayınlandı
+                    </p>
+                </div>
+                <hr>
+            }
+
+
+            <!-- Pager -->
+            <div class="clearfix">
+                <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+            </div>
+        </div>
+    </div>
+</div>
