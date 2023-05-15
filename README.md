@@ -9,7 +9,7 @@ This section is the visible part for blog users. Users can view articles, read t
 Microsoft.EntityFrameworkCore.SqlServer|5.0.0
 Microsoft.EntityFrameworkCore|5.0.0
 Microsoft.EntityFrameworkCore.Design|5.0.0
-# Home Page
+# Homepage
 
 <img src="https://github.com/DogukanDursun/BlogProject/blob/main/1.PNG" width="auto">
 
