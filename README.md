@@ -1,5 +1,5 @@
 # BlogProject
-[Click here to view the admin pane](https://github.com/DogukanDursun/BlogAdmin)
+[Click here to view the admin panel](https://github.com/DogukanDursun/BlogAdmin)
 # Project Description
 This section is the visible part for blog users. Users can view articles, read their content, and see images. They can also search within the articles, navigate to specific pages, and view social media accounts.
 # Tech Stack
